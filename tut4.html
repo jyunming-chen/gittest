@@ -72,7 +72,7 @@ function animate() {
 	keyboard.update();
 	
 	if (keyboard.pressed('Z'))
-		angle += 0.01;
+		angle -= 0.01;
 		
 	cube.position.set (8*Math.cos(angle), 0, 8*Math.sin(angle));
 	cube.rotation.y = -angle;
